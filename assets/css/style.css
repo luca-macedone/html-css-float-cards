@@ -44,14 +44,51 @@ body {
     padding: 1rem 2rem;
 }
 
+.member_img {
+    float: left;
+
+    width: 35%;
+}
+
 /* #endregion utility */
 
 /* #region main */
 
 .debug .card {
-    height: 100px;
+    height: 200px;
     background-color: greenyellow;
     border: 1px solid black;
+}
+
+.debug .card .content {
+    height: 100%;
+    background-color: aqua;
+    border: 1px solid red;
+}
+
+.debug .content .member_img {
+    height: 100%;
+    background-color: purple;
+    border: 1px solid white;
+}
+
+.debug .content .member_name {
+    height: calc(100% / 3);
+    background-color: black;
+    /* border: white; */
+}
+
+.debug .content .member_job {
+    height: calc(100% / 3);
+    background-color: white;
+    border: black;
+}
+
+.debug .content .member_mail {
+    display: block;
+    height: calc(100% / 3);
+    background-color: black;
+    border: 1px solid white;
 }
 
 h1 {

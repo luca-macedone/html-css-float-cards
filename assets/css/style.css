@@ -25,14 +25,34 @@ body {
 /* #region utility */
 
 .container {
-    width: 70%;
+    max-width: 1070px;
 
     margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    float: left;
+    
+    width: calc(100% / 3);
+
+    padding: 1rem 2rem;
 }
 
 /* #endregion utility */
 
 /* #region main */
+
+.debug .card {
+    height: 100px;
+    background-color: greenyellow;
+    border: 1px solid black;
+}
 
 h1 {
     font-weight: 900;

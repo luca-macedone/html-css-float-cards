@@ -13,6 +13,7 @@
     --fc-black: #0f0e17;
     --fc-pink: #e53170;
     --fc-lightblue: #6bcaee;
+    --fc-shadow: #424242;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 /* #region utility */
 
 .container {
-    max-width: 1070px;
+    max-width: 1280px;
 
     margin: 0 auto;
 }
@@ -44,12 +45,55 @@ body {
     padding: 1rem 2rem;
 }
 
+.content {
+    background-color: var(--fc-black);
+    box-shadow: var(--fc-shadow) 0 0 1rem;
+}
+
+.member_data {
+    padding: .5rem;
+
+    line-height: 2.2rem;
+}
+
 .member_img {
     float: left;
+
+    margin-right: 1rem;
 
     width: 35%;
 }
 
+.member_name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.member_job {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.member_mail {
+    text-decoration: none;
+}
+
+.text {
+    font-size: 1rem;
+}
+
+.color_black {
+    color: var(--fc-black);
+}
+
+.color_white {
+    color: var(--fc-white-light);
+}
+
+.color_lightblue {
+    color: var(--fc-lightblue);
+}
 /* #endregion utility */
 
 /* #region main */
@@ -72,16 +116,22 @@ body {
     border: 1px solid white;
 }
 
+.debug .content .member_data {
+    height: 100%;
+    background-color: beige;
+    border: 1px solid coral;
+}
+
 .debug .content .member_name {
     height: calc(100% / 3);
     background-color: black;
-    /* border: white; */
+    border: 1px solid white;
 }
 
 .debug .content .member_job {
     height: calc(100% / 3);
     background-color: white;
-    border: black;
+    border: 1px solid black;
 }
 
 .debug .content .member_mail {
@@ -106,4 +156,12 @@ h1 {
     padding-bottom: 1rem;
 }
 
+#main {
+    margin-top: 2rem;
+}
+
+#footer {
+    padding: 2rem;
+    text-align: center;
+}
 /* #endregion main */
